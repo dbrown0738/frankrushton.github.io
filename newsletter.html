@@ -3,31 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsletter | Frank Rushton Neighborhood Association</title>
+  <title>Newsletter - Frank Rushton Neighborhood Association</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Hero Section */
+    #hero { background:#ecf0f1; text-align:center; padding:60px 20px; }
+    #hero h2 { font-size:2.2em; margin-bottom:10px; }
+    #hero p { font-size:1.2em; }
+
+    /* Newsletter Section */
+    #newsletter { max-width:800px; margin:40px auto; padding:0 20px; text-align:center; }
+    #newsletter h2 { margin-bottom:20px; }
+    #newsletter iframe { width:100%; height:600px; border:1px solid #ccc; border-radius:10px; margin-bottom:20px; }
+    #newsletter a { display:inline-block; background:#2980b9; color:white; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:bold; }
+    #newsletter a:hover { background:#1c5980; }
+
+    /* Footer */
+    footer { background:#34495e; color:white; text-align:center; padding:20px; margin-top:40px; }
+  </style>
 </head>
 <body>
-  <!-- Header (same as home) -->
+
+  <!-- Header -->
   <header>
     <h1>Frank Rushton Neighborhood Association</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="events.html">Events</a>
-      <a href="newsletter.html">Newsletter</a>
+      <a href="newsletter.html" class="active">Newsletter</a>
       <a href="resources.html">Resources</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Newsletter Page Content -->
-  <section id="about">
-    <h2>About Our Neighborhood</h2>
-    <p>The newsletter is published monthly.</p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Our Monthly Newsletter</h2>
+    <p>Stay up-to-date with the latest community news, events, and resources.</p>
+  </section>
 
-    <h3>Receive a Print Newsletter!</h3>
-    <p>Please fill out the below contact form to receive a printed newsletter</p>
+  <!-- Newsletter Section -->
+  <section id="newsletter">
+    <h2>October 2025 Newsletter</h2>
+    
+    <!-- Embedded PDF -->
+    <iframe src="newsletters/october-2025-newsletter.pdf" title="October 2025 Newsletter"></iframe>
 
+    <!-- Download Button -->
+    <a href="newsletters/october-2025-newsletter.pdf" download>Download PDF</a>
   </section>
 
   <!-- Footer -->
@@ -35,6 +59,5 @@
     <p>© 2025 Frank Rushton Neighborhood Association. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
