@@ -14,32 +14,29 @@
     /* Header & Navigation */
     header { background:#2c3e50; color:white; padding:20px; text-align:center; }
     nav a { margin:0 10px; color:white; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
+    nav a:hover, nav a.active { text-decoration:underline; }
 
-    /* Sections */
-    section { padding:40px 20px; max-width:1000px; margin:0 auto; }
+    /* Hero Section */
     #hero { background:#ecf0f1; text-align:center; padding:60px 20px; }
     #hero h2 { font-size:2.2em; margin-bottom:10px; }
     #hero p { font-size:1.2em; }
-
-    /* News & Events */
-    #latest-news article, #upcoming-events li { margin-bottom:15px; }
-    #latest-news article h4 { margin-bottom:5px; }
-
-    /* Footer */
-    footer { background:#34495e; color:white; text-align:center; padding:20px; }
-
-    /* Buttons / Call-to-action */
     .cta { display:inline-block; background:#2980b9; color:white; padding:10px 20px; border-radius:5px; margin-top:10px; }
     .cta:hover { background:#1c5980; }
 
-    /* Contact Form */
-    form { display:flex; flex-direction:column; max-width:500px; margin:0 auto; }
-    label { margin-top:10px; }
-    input, textarea { padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:5px; width:100%; }
-    button { margin-top:15px; padding:10px; background:#27ae60; color:white; border:none; border-radius:5px; cursor:pointer; }
-    button:hover { background:#1e8449; }
+    /* Sections */
+    section { padding:40px 20px; max-width:1000px; margin:0 auto; }
 
+    /* Cards Layout for News & Events */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    .card { background:white; border:1px solid #ccc; border-radius:10px; padding:20px; text-align:left; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+    .card h3 { margin:10px 0; color:#2c3e50; }
+    .card p { font-size:0.95em; color:#555; }
+    .card a { display:inline-block; margin-top:10px; color:white; background:#2980b9; padding:8px 15px; border-radius:5px; text-decoration:none; font-weight:bold; }
+    .card a:hover { background:#1c5980; }
+
+    /* Footer */
+    footer { background:#34495e; color:white; text-align:center; padding:20px; margin-top:40px; }
   </style>
 </head>
 <body>
@@ -67,42 +64,40 @@
   <!-- Latest News -->
   <section id="latest-news">
     <h2>Latest News</h2>
-    <article>
-      <h4>Community Clean-Up Event</h4>
-      <p>Join us this Saturday to help clean up our parks! <a href="events.html">Learn more</a></p>
-    </article>
-    <article>
-      <h4>New Playground Installed</h4>
-      <p>Our new playground is open for kids and families. <a href="resources.html">Check it out</a></p>
-    </article>
+    <div class="cards">
+      <div class="card">
+        <h3>Community Clean-Up Event</h3>
+        <p>Join us this Saturday to help clean up our parks!</p>
+        <a href="events.html">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>New Playground Installed</h3>
+        <p>Our new playground is open for kids and families to enjoy.</p>
+        <a href="resources.html">Check It Out</a>
+      </div>
+    </div>
   </section>
 
   <!-- Upcoming Events -->
   <section id="upcoming-events">
     <h2>Upcoming Events</h2>
-    <ul>
-      <li>October 20 – Neighborhood Meeting</li>
-      <li>October 28 – Halloween Parade</li>
-      <li>November 10 – Fall Festival</li>
-    </ul>
-    <a class="cta" href="events.html">View Full Calendar</a>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="cards">
+      <div class="card">
+        <h3>Neighborhood Meeting</h3>
+        <p>Date: October 20</p>
+        <a href="events.html">More Info</a>
+      </div>
+      <div class="card">
+        <h3>Halloween Parade</h3>
+        <p>Date: October 28</p>
+        <a href="events.html">More Info</a>
+      </div>
+      <div class="card">
+        <h3>Fall Festival</h3>
+        <p>Date: November 10</p>
+        <a href="events.html">More Info</a>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -110,11 +105,5 @@
     <p>© 2025 Frank Rushton Neighborhood Association. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Optional: alert when form is submitted
-    document.querySelector('form').addEventListener('submit', function(e){
-      alert('Thank you for contacting us!');
-    });
-  </script>
 </body>
 </html>
