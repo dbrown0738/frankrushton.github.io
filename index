@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Neighborhood Name] Association</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Basic Reset & Fonts */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
+    h1,h2,h3,h4 { margin:0 0 10px 0; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header & Navigation */
+    header { background:#2c3e50; color:white; padding:20px; text-align:center; }
+    nav a { margin:0 10px; color:white; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+
+    /* Sections */
+    section { padding:40px 20px; max-width:1000px; margin:0 auto; }
+    #hero { background:#ecf0f1; text-align:center; padding:60px 20px; }
+    #hero h2 { font-size:2.2em; margin-bottom:10px; }
+    #hero p { font-size:1.2em; }
+
+    /* News & Events */
+    #latest-news article, #upcoming-events li { margin-bottom:15px; }
+    #latest-news article h4 { margin-bottom:5px; }
+
+    /* Footer */
+    footer { background:#34495e; color:white; text-align:center; padding:20px; }
+
+    /* Buttons / Call-to-action */
+    .cta { display:inline-block; background:#2980b9; color:white; padding:10px 20px; border-radius:5px; margin-top:10px; }
+    .cta:hover { background:#1c5980; }
+
+    /* Contact Form */
+    form { display:flex; flex-direction:column; max-width:500px; margin:0 auto; }
+    label { margin-top:10px; }
+    input, textarea { padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:5px; width:100%; }
+    button { margin-top:15px; padding:10px; background:#27ae60; color:white; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background:#1e8449; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>[Neighborhood Name] Association</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="news.html">News</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to Our Neighborhood!</h2>
+    <p>Connecting residents, sharing news, and fostering community.</p>
+    <a class="cta" href="contact.html">Join Us / Contact</a>
+  </section>
+
+  <!-- Latest News -->
+  <section id="latest-news">
+    <h2>Latest News</h2>
+    <article>
+      <h4>Community Clean-Up Event</h4>
+      <p>Join us this Saturday to help clean up our parks! <a href="events.html">Learn more</a></p>
+    </article>
+    <article>
+      <h4>New Playground Installed</h4>
+      <p>Our new playground is open for kids and families. <a href="resources.html">Check it out</a></p>
+    </article>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>October 20 – Neighborhood Meeting</li>
+      <li>October 28 – Halloween Parade</li>
+      <li>November 10 – Fall Festival</li>
+    </ul>
+    <a class="cta" href="events.html">View Full Calendar</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Our Neighborhood</h2>
+    <p>Our neighborhood has been home to families since 1985. We strive to foster a connected, safe, and vibrant community.</p>
+    <h3>Board Members</h3>
+    <ul>
+      <li>Jane Doe – President</li>
+      <li>John Smith – Vice President</li>
+      <li>Mary Johnson – Secretary</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 [Neighborhood Name] Association. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Optional: alert when form is submitted
+    document.querySelector('form').addEventListener('submit', function(e){
+      alert('Thank you for contacting us!');
+    });
+  </script>
+</body>
+</html>
