@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Frank Rushton Neighborhood Association</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Hero Section */
+    #hero { background:#ecf0f1; text-align:center; padding:60px 20px; }
+    #hero h2 { font-size:2.2em; margin-bottom:10px; }
+    #hero p { font-size:1.2em; }
+
+    /* Cards Container */
+    #resources .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    /* Individual Card */
+    .card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* Card Icon */
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .card a {
+      display:inline-block;
+      margin-top:10px;
+      color: white;
+      background: #2980b9;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover { background:#1c5980; }
+
+    /* Footer */
+    footer { background:#34495e; color:white; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Frank Rushton Neighborhood Association</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="resources.html" class="active">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Neighborhood Resources</h2>
+    <p>Explore local organizations and services available to residents of Rosedale.</p>
+  </section>
+
+  <!-- Resources Cards -->
+  <section id="resources">
+    <h2 style="text-align:center;">Key Rosedale Resources</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/rosedale-logo.png" alt="Rosedale Development Association Logo">
+        <h3>Rosedale Development Association</h3>
+        <p>Community development, neighborhood improvement programs, and resident resources.</p>
+        <a href="https://rosedale.org/" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="card">
+        <img src="images/library.png" alt="Rosedale Library Logo">
+        <h3>Rosedale Branch Library</h3>
+        <p>Books, events, and educational programs for all ages.</p>
+        <a href="https://www.kckpl.org/locations/rosedale-branch/" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="card">
+        <img src="images/school.png" alt="Rosedale Schools Logo">
+        <h3>Rosedale Public Schools</h3>
+        <p>Local school information, programs, and enrollment resources.</p>
+        <a href="https://www.kckps.org/Domain/1234" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="card">
+        <img src="images/parks.png" alt="Parks & Recreation Logo">
+        <h3>KCK Parks & Recreation</h3>
+        <p>Parks, recreation centers, and community events for families.</p>
+        <a href="https://www.kckrec.org/" target="_blank">Visit Website</a>
+      </div>
+
+      <div class="card">
+        <img src="images/housing.png" alt="Housing Authority Logo">
+        <h3>KCK Housing Authority</h3>
+        <p>Housing assistance programs and resources for residents in need.</p>
+        <a href="https://www.kckha.org/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Frank Rushton Neighborhood Association. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
