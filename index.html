@@ -2,301 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frank Rushton Neighborhood Association</title>
-
-<style>
-:root {
-  --primary: #1f3c5b;
-  --accent: #3c7db6;
-  --light: #f4f6f8;
-  --dark: #222;
-  --max-width: 1100px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: var(--dark);
-  background: white;
-}
-
-/* Header */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: var(--max-width);
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--primary);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 1.5rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
-/* Hero */
-.hero {
-  height: 90vh;
-  background: linear-gradient(rgba(31,60,91,0.7), rgba(31,60,91,0.7)),
-              url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1600&q=80')
-              no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 0 20px;
-}
-
-.hero-content {
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #2f6798;
-}
-
-/* Sections */
-section {
-  padding: 5rem 1rem;
-}
-
-.container {
-  max-width: var(--max-width);
-  margin: auto;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  color: var(--primary);
-}
-
-.light {
-  background: var(--light);
-}
-
-/* Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-  color: var(--primary);
-}
-
-/* Contact */
-.contact-info {
-  text-align: center;
-  line-height: 1.8;
-}
-
-/* Footer */
-footer {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 0.9rem;
-}
-
-/* Mobile */
-@media(max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    display: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-  nav ul.show {
-    display: block;
-  }
-
-  nav ul li {
-    margin: 1rem;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-}
-
-.menu-toggle {
-  display: none;
-}
-</style>
+<link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
 
 <header>
   <div class="nav-container">
     <div class="logo">Frank Rushton NA</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
-      <ul id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Welcome to Frank Rushton Neighborhood Association</h1>
-    <p>Building community, supporting neighbors, and strengthening our shared future together.</p>
-    <a href="#about" class="btn">Learn More</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      The Frank Rushton Neighborhood Association exists to promote community engagement,
-      neighborhood improvement, and collaboration among residents. We work to ensure our
-      neighborhood remains safe, welcoming, and vibrant for everyone.
-    </p>
-  </div>
-</section>
-
-<section class="light" id="events">
-  <div class="container">
-    <h2 class="section-title">Upcoming Events</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Monthly Meeting</h3>
-        <p>Second Tuesday of each month at 6:30 PM.</p>
-      </div>
-      <div class="card">
-        <h3>Neighborhood Cleanup</h3>
-        <p>Community-wide cleanup and beautification event this spring.</p>
-      </div>
-      <div class="card">
-        <h3>Block Party</h3>
-        <p>Annual summer gathering with food, music, and family activities.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="news">
-  <div class="container">
-    <h2 class="section-title">Neighborhood News</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Community Updates</h3>
-        <p>Stay informed about local developments and city announcements affecting our neighborhood.</p>
-      </div>
-      <div class="card">
-        <h3>Volunteer Opportunities</h3>
-        <p>Interested in helping? Join a committee or volunteer for upcoming events.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="light" id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact-info">
-      <p>Email: info@frankrushton.org</p>
-      <p>Follow us on Facebook for updates.</p>
-      <p>Meetings held locally within the neighborhood.</p>
-    </div>
+<section class="hero">
+  <div>
+    <h1>Frank Rushton Neighborhood Association</h1>
+    <p>Building community. Strengthening neighbors.</p>
+    <a href="about.html" class="btn">Learn More</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Frank Rushton Neighborhood Association | All Rights Reserved
+© 2026 Frank Rushton Neighborhood Association
 </footer>
-
-<script>
-function toggleMenu() {
-  document.getElementById("nav-links").classList.toggle("show");
-}
-</script>
 
 </body>
 </html>
