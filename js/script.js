@@ -9,3 +9,8 @@ navLinks.forEach(link => {
     link.classList.add("active");
   }
 });
+
+// Mobile toggle
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("show");
+}
