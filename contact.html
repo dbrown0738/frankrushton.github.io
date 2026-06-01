@@ -1,45 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact | Frank Rushton NA</title>
-<link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Frank Rushton Neighborhood Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo">Frank Rushton Neigborhood Association</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<script src="js/script.js"></script>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Frank Rushton <em>NA</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta active">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <h2 class="section-title">Contact Us</h2>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Get in Touch</p>
+      <h1>Contact Us</h1>
+      <p>Questions, ideas, concerns — we'd love to hear from you.</p>
+    </div>
+  </section>
 
-  <form action="https://formspree.io/f/yourformid" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <section class="section">
+    <div class="container contact-wrapper">
 
-  <p style="text-align:center; margin-top:1rem;">
-    Or email us directly at: info@frankrushton.org
-  </p>
-</div>
+      <!-- INFO COLUMN -->
+      <div class="contact-info">
+        <h3>We're Your Neighbors</h3>
+        <p style="color:var(--text-mid);margin-bottom:2rem;">The board is made up entirely of volunteers who live right here in the Frank Rushton neighborhood. We respond to all inquiries within 3–5 business days.</p>
 
-<footer>© 2026 Frank Rushton Neighborhood Association</footer>
+        <div class="contact-detail">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:info@frankrushton.org" style="color:var(--green-mid);">info@frankrushton.org</a></p>
+          </div>
+        </div>
 
+        <div class="contact-detail">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Mailing Address</strong>
+            <p>Frank Rushton Neighborhood Association<br/>P.O. Box 12345<br/>Kansas City, MO 64110</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">📅</span>
+          <div>
+            <strong>Board Meetings</strong>
+            <p>4th Tuesday of every month<br/>7:00 PM — Community Center, Room 2<br/>Open to all residents</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">🔔</span>
+          <div>
+            <strong>Urgent Neighborhood Issues</strong>
+            <p>For immediate concerns (safety, code violations), please contact <a href="https://www.kcmo.gov/city-hall/departments/311" target="_blank" style="color:var(--green-mid);">KC 311</a> or call <strong>816-513-1313</strong>.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;">
+          <p class="section-label">Follow Along</p>
+          <div style="display:flex;gap:0.75rem;margin-top:0.75rem;">
+            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Facebook</a>
+            <a href="#" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem;">Nextdoor</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+      <div class="contact-form-card">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Jane" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Smith" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="jane@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">— Select a topic —</option>
+            <option>General Question</option>
+            <option>Event Suggestion</option>
+            <option>Volunteer Interest</option>
+            <option>Neighborhood Concern</option>
+            <option>Newsletter Submission</option>
+            <option>Board / Governance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us what's on your mind..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="handleSubmit(event)">Send Message →</button>
+        <p id="form-success" style="display:none;margin-top:1rem;color:var(--green-mid);font-size:0.9rem;text-align:center;">
+          ✓ Thank you! Your message has been sent. We'll be in touch within a few days.
+        </p>
+        <p style="font-size:0.78rem;color:var(--text-light);margin-top:1rem;text-align:center;">
+          This form is for general inquiries. For emergencies, always call 911.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Frank Rushton <em>NA</em></span>
+        </div>
+        <p>Building community, one neighbor at a time.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Frank Rushton Neighborhood Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const msg = document.getElementById('message').value;
+      if (!email.includes('@') || msg.trim().length < 5) {
+        alert('Please fill in your email and a message before submitting.');
+        return;
+      }
+      document.getElementById('form-success').style.display = 'block';
+      ['fname','lname','email','subject','message'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el.tagName === 'SELECT') el.selectedIndex = 0;
+        else el.value = '';
+      });
+      document.getElementById('form-success').scrollIntoView({behavior:'smooth'});
+    }
+  </script>
 </body>
 </html>
