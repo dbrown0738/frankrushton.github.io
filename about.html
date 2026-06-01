@@ -1,106 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Frank Rushton Neighborhood Association</title>
-<link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Frank Rushton Neighborhood Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo">Frank Rushton Neigborhood Association</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<script src="js/script.js"></script>
-
-<!-- WHO WE ARE -->
-<section class="container">
-  <h2 class="section-title">Who We Are</h2>
-  <div class="card">
-    <p>
-      The Frank Rushton Neighborhood Association is a volunteer-driven organization dedicated to fostering a strong, connected, and vibrant community in Rosedale. We bring residents together, provide resources, and advocate for neighborhood improvements.
-    </p>
-  </div>
-</section>
-
-<!-- MISSION & VISION -->
-<section class="container">
-  <h2 class="section-title">Our Mission & Vision</h2>
-
-  <div class="grid grid-3">
-    <div class="card">
-      <h3>Mission</h3>
-      <p>
-        To strengthen community ties, promote civic engagement, and improve the quality of life for all Rosedale residents.
-      </p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Frank Rushton <em>NA</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Vision</h3>
-      <p>
-        A safe, inclusive, and thriving neighborhood where residents are engaged, informed, and empowered.
-      </p>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Who We Are</p>
+      <h1>About Our Association</h1>
+      <p>A proud community dedicated to neighbors helping neighbors since the early 2000s.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HISTORY -->
-<section class="container">
-  <h2 class="section-title">Our History</h2>
-  <div class="card">
-    <p>
-      Founded in <strong>[Year]</strong>, the Frank Rushton Neighborhood Association has worked tirelessly to preserve the character of our community while promoting growth, safety, and engagement. Over the years, we have organized community events, supported local initiatives, and advocated for the needs of our residents.
-    </p>
-  </div>
-</section>
-
-<!-- BOARD MEMBERS -->
-<section class="container">
-  <h2 class="section-title">Board Members</h2>
-
-  <div class="grid grid-2">
-
-    <div class="card" style="text-align:center;">
-      <img src="images/copresident1.jpg" class="board-photo">
-      <h3>Co-President</h3>
-      <p>David Brown</p>
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container two-col">
+      <div class="col-text">
+        <p class="section-label">Our Mission</p>
+        <h2 class="section-title">A Better Neighborhood,<br/>For Everyone</h2>
+        <p>The Frank Rushton Neighborhood Association exists to strengthen the bonds between neighbors, advocate for our community's interests, and create an environment where all residents feel safe, heard, and at home.</p>
+        <br/>
+        <p>We work closely with Kansas City's city council, parks department, and local businesses to address concerns and champion improvements that benefit every household in our area.</p>
+      </div>
+      <div class="col-visual">
+        <div class="visual-block">
+          <div class="stat-card">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Households</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Years Active</span>
+          </div>
+          <div class="stat-card accent">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Volunteer Run</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card" style="text-align:center;">
-      <img src="images/copresident2.jpg" class="board-photo">
-      <h3>Co-President</h3>
-      <p>Andrea Villela</p>
+  <!-- VALUES -->
+  <section class="section alt-bg">
+    <div class="container">
+      <p class="section-label">What We Stand For</p>
+      <h2 class="section-title">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="v-icon">🤝</div>
+          <h3>Community First</h3>
+          <p>Every decision we make puts the well-being of our residents at the forefront. We believe a strong neighborhood starts with strong relationships.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">🔊</div>
+          <h3>Open Communication</h3>
+          <p>We keep our community informed through regular meetings, newsletters, and accessible leadership. Your voice matters and we're here to listen.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">🌿</div>
+          <h3>Sustainability</h3>
+          <p>We champion green initiatives, tree planting programs, and responsible development that preserves what makes our neighborhood beautiful.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">🛡️</div>
+          <h3>Safety & Security</h3>
+          <p>Working with local law enforcement and city officials, we help maintain a safe environment for all — especially our children and elderly residents.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">🎉</div>
+          <h3>Vibrant Culture</h3>
+          <p>From block parties to seasonal celebrations, we create opportunities for neighbors to connect, celebrate, and build lasting friendships.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">⚖️</div>
+          <h3>Equity & Inclusion</h3>
+          <p>Our association welcomes all residents regardless of background. We strive to make every voice heard and every neighbor feel they belong.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card" style="text-align:center;">
-      <img src="images/secretary.jpg" class="board-photo">
-      <h3>Secretary</h3>
-      <p>Annette Rude</p>
+  <!-- BOARD -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Leadership</p>
+      <h2 class="section-title">Meet the Board</h2>
+      <p style="color:var(--text-mid);max-width:560px;">Our board is made up entirely of dedicated volunteers who live right here in the neighborhood. Elections are held each October at the Annual General Meeting.</p>
+      <div class="board-grid">
+        <div class="board-card">
+          <div class="board-avatar">👩</div>
+          <h4>David Brown</h4>
+          <span>Co-President</span>
+        </div>
+        <div class="board-card">
+          <div class="board-avatar">👨</div>
+          <h4>Andrea Villela</h4>
+          <span>Co-President</span>
+        </div>
+        <div class="board-card">
+          <div class="board-avatar">👩</div>
+          <h4>Harold Hepfer</h4>
+          <span>Treasurer</span>
+        </div>
+        <div class="board-card">
+          <div class="board-avatar">👨</div>
+          <h4>Annette Rude</h4>
+          <span>Secretary</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card" style="text-align:center;">
-      <img src="images/treasurer.jpg" class="board-photo">
-      <h3>Treasurer</h3>
-      <p>Harold Hepfer</p>
+  <!-- JOIN CTA -->
+  <section class="newsletter-cta section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Get Involved</h2>
+        <p>Join one of our committees, volunteer at events, or run for the board. There are many ways to make a difference in our neighborhood.</p>
+      </div>
+      <a href="contact.html" class="btn btn-white">Reach Out Today →</a>
     </div>
-
-  </div>
-</section>
-
-<!-- BYLAWS -->
+  </section>
+  
+  <!-- BYLAWS -->
 <section class="container">
   <h2 class="section-title">Bylaws</h2>
 
@@ -117,14 +165,29 @@
   </p>
 </section>
 
-<footer>
-  <p>© 2026 Frank Rushton Neighborhood Association</p>
-  <p>
-    <a href="https://facebook.com/YOURPAGE" target="_blank" style="color:#F6F3EA;">
-      Follow us on Facebook
-    </a>
-  </p>
-</footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Frank Rushton <em>NA</em></span>
+        </div>
+        <p>Building community, one neighbor at a time.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Frank Rushton Neighborhood Association. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <script src="nav.js"></script>
 </body>
 </html>
