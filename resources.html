@@ -1,103 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources | Frank Rushton Neighborhood Association</title>
-<link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Frank Rushton Neighborhood Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo">Frank Rushton Neigborhood Association</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<script src="js/script.js"></script>
-
-<section class="container">
-  <h2 class="section-title">Key Rosedale Resources</h2>
-
-  <div class="grid grid-3">
-
-    <!-- Rosedale Development Association -->
-    <div class="card" style="text-align:center;">
-      <img src="images/rosedale-logo.png" 
-           alt="Rosedale Development Association Logo"
-           style="height:80px; margin-bottom:1rem;">
-      <h3>Rosedale Development Association</h3>
-      <p>
-        Community development, neighborhood improvement programs, and resident resources.
-      </p>
-      <a href="https://rosedale.org/" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">
-        Visit Website
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Frank Rushton <em>Neighborhood Association</em></span>
       </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Rosedale Public Schools -->
-    <div class="card" style="text-align:center;">
-      <img src="images/school.png" 
-           alt="Rosedale Public Schools Logo"
-           style="height:80px; margin-bottom:1rem;">
-      <h3>Rosedale Public Schools</h3>
-      <p>
-        Local school information, programs, and enrollment resources.
-      </p>
-      <a href="https://www.kckps.org/Domain/1234" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">
-        Visit Website
-      </a>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Helpful Links & Info</p>
+      <h1>Neighborhood Resources</h1>
+      <p>Everything you need to navigate Kansas City, Kansas, city services, local organizations, and community support.</p>
     </div>
+  </section>
 
-    <!-- Parks & Recreation -->
-    <div class="card" style="text-align:center;">
-      <img src="images/parks.png" 
-           alt="KCK Parks & Recreation Logo"
-           style="height:80px; margin-bottom:1rem;">
-      <h3>KCK Parks & Recreation</h3>
-      <p>
-        Parks, recreation centers, and community events for families.
-      </p>
-      <a href="https://www.wycokck.org/Departments/Parks-and-Recreation" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">
-        Visit Website
-      </a>
+  <!-- RESOURCES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="resources-grid">
+
+        <!-- SECTION HEADING: NEIGHBORHOOD & COMMUNITY -->
+        <div class="resources-section-heading">🏘️ Neighborhood &amp; Community Organizations</div>
+
+        <div class="resource-group">
+          <h3>🌱 Rosedale Development Association</h3>
+          <div class="resource-list">
+            <a href="https://www.rosedaledevelopment.com" target="_blank" rel="noopener" class="resource-link">RDA — Official Website</a>
+            <a href="https://www.rosedaledevelopment.com/programs" target="_blank" rel="noopener" class="resource-link">Community Programs &amp; Initiatives</a>
+            <a href="https://www.rosedaledevelopment.com/housing" target="_blank" rel="noopener" class="resource-link">RDA Housing &amp; Homeownership Help</a>
+            <a href="https://www.rosedaledevelopment.com/business" target="_blank" rel="noopener" class="resource-link">Small Business Support</a>
+            <a href="https://www.rosedaledevelopment.com/events" target="_blank" rel="noopener" class="resource-link">RDA Events Calendar</a>
+            <a href="https://www.rosedaledevelopment.com/contact" target="_blank" rel="noopener" class="resource-link">Contact RDA</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>🤝 KCK Neighborhood Resources</h3>
+          <div class="resource-list">
+            <a href="https://www.wycokck.org/departments/planning/neighborhood-planning" target="_blank" rel="noopener" class="resource-link">Neighborhood Planning — Wyandotte County</a>
+            <a href="https://www.wycokck.org/departments/community-corrections" target="_blank" rel="noopener" class="resource-link">Community Services — UG</a>
+            <a href="https://www.heartlandcdc.com" target="_blank" rel="noopener" class="resource-link">Heartland Community Development</a>
+            <a href="https://www.neighbor2neighbor.net" target="_blank" rel="noopener" class="resource-link">Neighbor 2 Neighbor Program</a>
+            <a href="#" class="resource-link">Frank Rushton NA Boundary Map</a>
+            <a href="#" class="resource-link">Volunteer Interest Form</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>📄 Association Documents</h3>
+          <div class="resource-list">
+            <a href="#" class="resource-link">Association Bylaws (PDF)</a>
+            <a href="#" class="resource-link">2025 Annual Report (PDF)</a>
+            <a href="#" class="resource-link">Board Meeting Minutes Archive</a>
+            <a href="#" class="resource-link">Event Permit Request Form</a>
+            <a href="#" class="resource-link">Neighborhood Boundary Map</a>
+            <a href="#" class="resource-link">Volunteer Interest Form</a>
+          </div>
+        </div>
+
+        <!-- SECTION HEADING: CITY & COUNTY GOVERNMENT -->
+        <div class="resources-section-heading">🏛️ City &amp; County Government</div>
+
+        <div class="resource-group">
+          <h3>🏙️ Unified Government of KCK</h3>
+          <div class="resource-list">
+            <a href="https://www.wycokck.org" target="_blank" rel="noopener" class="resource-link">Unified Government — Official Website</a>
+            <a href="https://www.wycokck.org/services/311" target="_blank" rel="noopener" class="resource-link">Report Issues via UG 311</a>
+            <a href="https://www.wycokck.org/departments/public-works" target="_blank" rel="noopener" class="resource-link">Public Works — Roads &amp; Infrastructure</a>
+            <a href="https://www.wycokck.org/departments/planning" target="_blank" rel="noopener" class="resource-link">Planning &amp; Urban Design</a>
+            <a href="https://www.wycokck.org/departments/finance/budget" target="_blank" rel="noopener" class="resource-link">City Budget &amp; Finance</a>
+            <a href="https://www.wycokck.org/government/commission" target="_blank" rel="noopener" class="resource-link">Board of Commissioners</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>🚨 Safety &amp; Emergency Services</h3>
+          <div class="resource-list">
+            <a href="https://www.wycokck.org/departments/police" target="_blank" rel="noopener" class="resource-link">KCK Police Department</a>
+            <a href="https://www.wycokck.org/departments/fire" target="_blank" rel="noopener" class="resource-link">KCK Fire Department</a>
+            <a href="https://www.wycokck.org/departments/emergency-management" target="_blank" rel="noopener" class="resource-link">Wyandotte County Emergency Management</a>
+            <a href="https://www.ready.gov" target="_blank" rel="noopener" class="resource-link">Ready.gov — Emergency Preparedness</a>
+            <a href="https://www.nixle.com" target="_blank" rel="noopener" class="resource-link">Sign Up for KCK Safety Alerts (Nixle)</a>
+            <a href="#" class="resource-link">Neighborhood Watch Program Info</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>🏠 Housing &amp; Property</h3>
+          <div class="resource-list">
+            <a href="https://www.kckha.org" target="_blank" rel="noopener" class="resource-link">KCK Housing Authority</a>
+            <a href="https://www.kckha.org/housing-programs" target="_blank" rel="noopener" class="resource-link">KCK Housing Authority — Programs</a>
+            <a href="https://www.wycokck.org/departments/planning/codes" target="_blank" rel="noopener" class="resource-link">Building Codes &amp; Permits — UG</a>
+            <a href="https://www.wycokck.org/departments/appraiser" target="_blank" rel="noopener" class="resource-link">Wyandotte County Property Appraisal</a>
+            <a href="https://www.rosedaledevelopment.com/housing" target="_blank" rel="noopener" class="resource-link">RDA Home Repair Assistance</a>
+            <a href="https://www.wycokck.org/departments/planning/codes/report" target="_blank" rel="noopener" class="resource-link">Report Code Violations</a>
+          </div>
+        </div>
+
+        <!-- SECTION HEADING: UTILITIES & ENVIRONMENT -->
+        <div class="resources-section-heading">⚡ Utilities &amp; Environment</div>
+
+        <div class="resource-group">
+          <h3>⚡ Board of Public Utilities (BPU)</h3>
+          <div class="resource-list">
+            <a href="https://www.bpu.com" target="_blank" rel="noopener" class="resource-link">BPU — Official Website</a>
+            <a href="https://www.bpu.com/pay-bill" target="_blank" rel="noopener" class="resource-link">Pay Your BPU Bill</a>
+            <a href="https://www.bpu.com/outages" target="_blank" rel="noopener" class="resource-link">Outage Map &amp; Report Outages</a>
+            <a href="https://www.bpu.com/customer-service/assistance-programs" target="_blank" rel="noopener" class="resource-link">Bill Assistance &amp; Payment Plans</a>
+            <a href="https://www.bpu.com/environment/conservation" target="_blank" rel="noopener" class="resource-link">Energy Conservation Programs</a>
+            <a href="https://www.bpu.com/customer-service/contact" target="_blank" rel="noopener" class="resource-link">Contact BPU Customer Service</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>🌿 Parks &amp; Environment</h3>
+          <div class="resource-list">
+            <a href="https://www.wycokck.org/departments/parks-recreation" target="_blank" rel="noopener" class="resource-link">KCK Parks &amp; Recreation Department</a>
+            <a href="https://www.wycokck.org/departments/parks-recreation/parks" target="_blank" rel="noopener" class="resource-link">Park Locations &amp; Facilities</a>
+            <a href="https://www.wycokck.org/departments/parks-recreation/programs" target="_blank" rel="noopener" class="resource-link">Parks Programs &amp; Classes</a>
+            <a href="https://heartlandtreealliance.org" target="_blank" rel="noopener" class="resource-link">Heartland Tree Alliance — Free Trees</a>
+            <a href="https://www.wycokck.org/departments/public-works/solid-waste" target="_blank" rel="noopener" class="resource-link">Solid Waste &amp; Recycling — UG</a>
+            <a href="#" class="resource-link">Community Garden Plot Applications</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>💧 Water &amp; Stormwater</h3>
+          <div class="resource-list">
+            <a href="https://www.bpu.com/water" target="_blank" rel="noopener" class="resource-link">BPU Water Services</a>
+            <a href="https://www.bpu.com/water/water-quality" target="_blank" rel="noopener" class="resource-link">BPU Water Quality Reports</a>
+            <a href="https://www.wycokck.org/departments/public-works/stormwater" target="_blank" rel="noopener" class="resource-link">Stormwater Management — UG</a>
+            <a href="https://www.bpu.com/water/conservation" target="_blank" rel="noopener" class="resource-link">Water Conservation Tips &amp; Rebates</a>
+            <a href="https://www.bpu.com/customer-service/start-stop-transfer" target="_blank" rel="noopener" class="resource-link">Start, Stop, or Transfer Water Service</a>
+            <a href="https://www.bpu.com/water/report-issue" target="_blank" rel="noopener" class="resource-link">Report a Water Issue</a>
+          </div>
+        </div>
+
+        <!-- SECTION HEADING: SCHOOLS & FAMILY -->
+        <div class="resources-section-heading">📚 Schools, Family &amp; Social Services</div>
+
+        <div class="resource-group">
+          <h3>🎓 Rosedale &amp; KCK Public Schools</h3>
+          <div class="resource-list">
+            <a href="https://www.kckps.org" target="_blank" rel="noopener" class="resource-link">Kansas City, Kansas Public Schools</a>
+            <a href="https://www.kckps.org/schools" target="_blank" rel="noopener" class="resource-link">School Directory — KCKPS</a>
+            <a href="https://www.kckps.org/enrollment" target="_blank" rel="noopener" class="resource-link">Student Enrollment &amp; Registration</a>
+            <a href="https://www.kckps.org/nutrition" target="_blank" rel="noopener" class="resource-link">Free &amp; Reduced Meals Program</a>
+            <a href="https://www.kckps.org/community" target="_blank" rel="noopener" class="resource-link">Community &amp; Parent Resources</a>
+            <a href="#" class="resource-link">Rosedale Middle School</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>📖 Libraries &amp; Learning</h3>
+          <div class="resource-list">
+            <a href="https://www.kckpl.org" target="_blank" rel="noopener" class="resource-link">Kansas City, Kansas Public Library</a>
+            <a href="https://www.kckpl.org/locations" target="_blank" rel="noopener" class="resource-link">KCK Library Locations &amp; Hours</a>
+            <a href="https://www.kckpl.org/programs" target="_blank" rel="noopener" class="resource-link">Library Programs &amp; Events</a>
+            <a href="https://www.wycokck.org/departments/parks-recreation/programs/youth" target="_blank" rel="noopener" class="resource-link">Youth Recreation Programs — KCK Parks</a>
+            <a href="#" class="resource-link">After-School Program Directory</a>
+            <a href="https://www.kckps.org/adult-education" target="_blank" rel="noopener" class="resource-link">Adult Education &amp; GED Programs</a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>❤️ Social Services &amp; Support</h3>
+          <div class="resource-list">
+            <a href="https://www.unitedwaygkc.org" target="_blank" rel="noopener" class="resource-link">United Way of Greater Kansas City</a>
+            <a href="https://www.wycokck.org/departments/aging-human-services" target="_blank" rel="noopener" class="resource-link">Aging &amp; Human Services — Wyandotte Co.</a>
+            <a href="https://www.wycokck.org/departments/health" target="_blank" rel="noopener" class="resource-link">Wyandotte County Health Department</a>
+            <a href="https://www.211kc.org" target="_blank" rel="noopener" class="resource-link">Dial 2-1-1 — Local Health &amp; Human Services</a>
+            <a href="https://www.wycokck.org/departments/community-corrections/veterans" target="_blank" rel="noopener" class="resource-link">Veterans Services — Wyandotte County</a>
+            <a href="https://www.kchabitat.org" target="_blank" rel="noopener" class="resource-link">Habitat for Humanity — Kansas City</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <!-- Housing Authority -->
-    <div class="card" style="text-align:center;">
-      <img src="images/housing.png" 
-           alt="KCK Housing Authority Logo"
-           style="height:80px; margin-bottom:1rem;">
-      <h3>KCK Housing Authority</h3>
-      <p>
-        Housing assistance programs and resources for residents in need.
-      </p>
-      <a href="https://www.kckha.org/" target="_blank" class="btn" style="margin-top:1rem; display:inline-block;">
-        Visit Website
-      </a>
+  <!-- MISSING RESOURCE -->
+  <section class="newsletter-cta section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Missing a Resource?</h2>
+        <p>If you know of a helpful link or service that should be listed here, let us know and we'll add it to the page.</p>
+      </div>
+      <a href="contact.html" class="btn btn-white">Suggest a Resource →</a>
     </div>
+  </section>
 
-  </div>
-</section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Frank Rushton <em>Neighborhood Association</em></span>
+        </div>
+        <p>Building community, one neighbor at a time.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Frank Rushton Neighborhood Association. All rights reserved.</p>
+    </div>
+  </footer>
 
-<footer>
-  <p>© 2026 Frank Rushton Neighborhood Association</p>
-  <p>
-    <a href="https://facebook.com/YOURPAGE" target="_blank" style="color:#F6F3EA;">
-      Follow us on Facebook
-    </a>
-  </p>
-</footer>
-
+  <script src="nav.js"></script>
 </body>
 </html>
