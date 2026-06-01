@@ -1,48 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Newsletter | Frank Rushton Neighborhood Association</title>
-<link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — Frank Rushton Neighborhood Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo">Frank Rushton Neigborhood Association</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<script src="js/script.js"></script>
-
-<div class="container">
-  <h2 class="section-title">Neighborhood Newsletter</h2>
-
-  <div class="grid grid-3">
-    <div class="card">
-      <h3>January 2026</h3>
-      <a href="newsletters/january-2026.pdf" class="btn">View PDF</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Frank Rushton <em>NA</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html" class="active">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <h3 style="margin-top:3rem;">Upload Instructions</h3>
-  <p>
-    To upload a new newsletter:
-    <br>1. Add PDF to the <strong>/newsletters</strong> folder
-    <br>2. Copy one of the cards above and update the file name
-  </p>
-</div>
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Stay Informed</p>
+      <h1>The Rushton Report</h1>
+      <p>Monthly news, updates, and stories from your neighborhood — delivered to your inbox.</p>
+    </div>
+  </section>
 
-<footer>© 2026 Frank Rushton Neighborhood Association</footer>
+  <!-- SUBSCRIBE -->
+  <section class="section">
+    <div class="container" style="max-width:720px;">
+      <div class="subscribe-box">
+        <h3>Subscribe to the Newsletter</h3>
+        <p>Join hundreds of your neighbors who receive the Rushton Report each month. No spam — just community news.</p>
+        <div class="subscribe-form">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn btn-gold" onclick="handleSubscribe(event)">Subscribe</button>
+        </div>
+        <p id="sub-msg" style="margin-top:1rem;font-size:0.88rem;color:var(--gold);display:none;">✓ Thanks for subscribing! Watch for your first issue soon.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- ARCHIVE -->
+  <section class="section alt-bg">
+    <div class="container">
+      <p class="section-label">Past Issues</p>
+      <h2 class="section-title">Newsletter Archive</h2>
+      <p style="color:var(--text-mid);margin-bottom:0.5rem;">Browse previous issues of the Rushton Report below.</p>
+
+      <div class="newsletter-archives">
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>May 2026 — Summer Preview Edition</h4>
+            <span>Block party details, park renovation update, volunteer spotlight</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>April 2026 — Spring Cleaning Issue</h4>
+            <span>Cleanup day recap, new board member intro, city budget hearing</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>March 2026 — Infrastructure Focus</h4>
+            <span>Road repair update, streetlight petition results, pothole reporting guide</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>February 2026 — Community Profiles</h4>
+            <span>Meet 3 long-time residents, Valentine's bake sale recap, dog park survey</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>January 2026 — Year in Review</h4>
+            <span>2025 highlights, 2026 goals, treasurer's annual report</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>December 2025 — Holiday Edition</h4>
+            <span>Holiday lighting contest winners, winter safety tips, year-end message from the board</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>November 2025 — Election Results</h4>
+            <span>Annual meeting recap, new board officers announced, Thanksgiving food drive results</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+        <div class="newsletter-item">
+          <div class="nl-info">
+            <h4>October 2025 — Annual Meeting Issue</h4>
+            <span>AGM preview, candidate bios, proposed bylaw changes explained</span>
+          </div>
+          <a href="#" class="btn btn-outline" style="white-space:nowrap;">Read Issue</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT -->
+  <section class="newsletter-cta section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Share Your Story</h2>
+        <p>Got a neighbor spotlight, a local business to feature, or a community update? We'd love to include it in the next issue.</p>
+      </div>
+      <a href="contact.html" class="btn btn-white">Submit a Story →</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.6rem;">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Frank Rushton <em>NA</em></span>
+        </div>
+        <p>Building community, one neighbor at a time.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Frank Rushton Neighborhood Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const input = document.querySelector('.subscribe-form input');
+      const msg = document.getElementById('sub-msg');
+      if (input.value.includes('@')) {
+        msg.style.display = 'block';
+        input.value = '';
+      } else {
+        input.style.border = '2px solid #e53935';
+        setTimeout(() => input.style.border = '', 2000);
+      }
+    }
+  </script>
 </body>
 </html>
