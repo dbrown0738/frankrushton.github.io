@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -64,8 +64,8 @@
         <div class="contact-detail">
           <span class="contact-icon">📅</span>
           <div>
-            <strong>Community Gatherings</strong>
-            <p>2nd Tuesday of every other month<br/>6:30 PM - The Way Church<br/>Open to all residents</p>
+            <strong>Board Meetings</strong>
+            <p>2nd Tuesday of every other month<br/>6:30PM — The Way Church<br/>Open to all residents</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@
           <span class="contact-icon">🔔</span>
           <div>
             <strong>Urgent Neighborhood Issues</strong>
-            <p>For immediate concerns (safety, code violations), please contact <a href="https://www.wycokck.org/Departments/311-Call-Center" target="_blank" style="color:var(--green-mid);">311</a> or call <strong>913-573-5311</strong>.</p>
+            <p>For immediate concerns (safety, code violations), please contact <a href="https://www.wycokck.org/Departments/311-Call-Center" target="_blank" style="color:var(--green-mid);">311</a> or call <strong>(913) 573-5311</strong>.</p>
           </div>
         </div>
 
@@ -89,44 +89,65 @@
       <!-- FORM COLUMN -->
       <div class="contact-form-card">
         <h3>Send Us a Message</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" placeholder="Jane" />
+
+        <!-- Formspree: success message (shown after submit) -->
+        <div data-fs-success class="fs-form-success">
+          <strong>Message sent!</strong>
+          <span>Thank you for reaching out. We'll be in touch within 3–5 business days.</span>
+        </div>
+
+        <!-- Formspree: top-level error message -->
+        <div data-fs-error class="fs-form-error"></div>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="first_name" placeholder="Jane" data-fs-field />
+              <span class="fs-field-error" data-fs-error="first_name"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="last_name" placeholder="Smith" data-fs-field />
+              <span class="fs-field-error" data-fs-error="last_name"></span>
+            </div>
           </div>
+
           <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" placeholder="Smith" />
+            <label for="email">Email Address <span style="color:#c0392b;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required data-fs-field />
+            <span class="fs-field-error" data-fs-error="email"></span>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="jane@example.com" />
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <select id="subject">
-            <option value="">— Select a topic —</option>
-            <option>General Question</option>
-            <option>Event Suggestion</option>
-            <option>Volunteer Interest</option>
-            <option>Neighborhood Concern</option>
-            <option>Newsletter Submission</option>
-            <option>Board / Governance</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="Tell us what's on your mind..."></textarea>
-        </div>
-        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="handleSubmit(event)">Send Message →</button>
-        <p id="form-success" style="display:none;margin-top:1rem;color:var(--green-mid);font-size:0.9rem;text-align:center;">
-          ✓ Thank you! Your message has been sent. We'll be in touch within a few days.
-        </p>
-        <p style="font-size:0.78rem;color:var(--text-light);margin-top:1rem;text-align:center;">
-          This form is for general inquiries. For emergencies, always call 911.
-        </p>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" data-fs-field>
+              <option value="">— Select a topic —</option>
+              <option>General Question</option>
+              <option>Event Suggestion</option>
+              <option>Volunteer Interest</option>
+              <option>Neighborhood Concern</option>
+              <option>Newsletter Submission</option>
+              <option>Board / Governance</option>
+              <option>Other</option>
+            </select>
+            <span class="fs-field-error" data-fs-error="subject"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span style="color:#c0392b;">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required data-fs-field></textarea>
+            <span class="fs-field-error" data-fs-error="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-fs-submit-btn>
+            Send Message →
+          </button>
+
+          <p style="font-size:0.78rem;color:var(--text-light);margin-top:1rem;text-align:center;">
+            Fields marked <span style="color:#c0392b;">*</span> are required. For emergencies, always call 911.
+          </p>
+        </form>
       </div>
 
     </div>
@@ -137,7 +158,7 @@
       <div class="footer-brand">
         <div style="display:flex;align-items:center;gap:0.6rem;">
           <span class="logo-icon">⬡</span>
-          <span class="logo-text">Frank Rushton <em>Neighborhood Association</em></span>
+          <span class="logo-text">Frank Rushton <em>NA</em></span>
         </div>
         <p>Building community, one neighbor at a time.</p>
       </div>
@@ -156,23 +177,11 @@
   </footer>
 
   <script src="nav.js"></script>
+  <!-- Formspree Ajax SDK -->
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      const msg = document.getElementById('message').value;
-      if (!email.includes('@') || msg.trim().length < 5) {
-        alert('Please fill in your email and a message before submitting.');
-        return;
-      }
-      document.getElementById('form-success').style.display = 'block';
-      ['fname','lname','email','subject','message'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el.tagName === 'SELECT') el.selectedIndex = 0;
-        else el.value = '';
-      });
-      document.getElementById('form-success').scrollIntoView({behavior:'smooth'});
-    }
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'mqeobngn' });
   </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
