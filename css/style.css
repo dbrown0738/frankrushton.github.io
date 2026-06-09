@@ -703,6 +703,44 @@ ul { list-style: none; }
 .form-group textarea:focus { border-color: var(--green-mid); box-shadow: 0 0 0 3px rgba(45,92,63,0.1); }
 .form-group textarea { min-height: 130px; resize: vertical; }
  
+/* aria-invalid applied by @formspree/ajax on field errors */
+.form-group input[aria-invalid="true"],
+.form-group select[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192,57,43,0.1);
+}
+.fs-field-error {
+  display: block;
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin-top: 0.3rem;
+}
+.fs-form-error {
+  background: #fdf0ee;
+  border: 1px solid #f5c6c0;
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.88rem;
+  color: #922b21;
+  margin-bottom: 1.1rem;
+  display: none;
+}
+.fs-form-error:not(:empty) { display: block; }
+.fs-form-success {
+  background: var(--green-pale);
+  border: 1px solid #a8d5b5;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  display: none;
+}
+.fs-form-success:not(:empty) { display: block; }
+.fs-form-success strong { color: var(--green-dark); font-family: var(--font-display); font-size: 1.1rem; display: block; margin-bottom: 0.35rem; }
+.fs-form-success span { color: var(--text-mid); font-size: 0.9rem; }
+/* Disable submit button while submitting */
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; transform: none !important; }
+ 
 /* ============================================================
    ANIMATIONS
    ============================================================ */
