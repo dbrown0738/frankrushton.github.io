@@ -24,7 +24,7 @@ const EVENTS = [
     tag: "meeting",
     tagLabel: "Meeting",
     title: "Neighborhood Gathering",
-    description: "Our biggest event of the season! Join us for live music, food trucks, games for kids, and a chance to meet your neighbors. This year we're featuring a community raffle with prizes donated by local businesses.",
+    description: "Our regular bimonthly meeting is open to all residents. July's agenda includes the park renovation project update, discussion of the new traffic calming proposal on Elm Street, and the upcoming officer elections.",
     time: "6:30PM - 7:30PM",
     location: "The Way Church, 4326 Lloyd St.",
     extra: "Free & Open to All",
