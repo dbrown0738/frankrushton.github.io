@@ -106,31 +106,8 @@
     <div class="container">
       <p class="section-label">Mark Your Calendar</p>
       <h2 class="section-title">Upcoming Events</h2>
-      <div class="events-list">
-        <div class="event-row">
-          <div class="event-date"><span class="date-month">JUL</span><span class="date-day">14</span></div>
-          <div class="event-info">
-            <h4>Neighborhood Gathering</h4>
-            <p>The Way Church • 6:30PM - 7:30PM</p>
-          </div>
-          <a href="events.html" class="event-link">Details →</a>
-        </div>
-        <div class="event-row">
-          <div class="event-date"><span class="date-month">SEP</span><span class="date-day">8</span></div>
-          <div class="event-info">
-            <h4>Neighborhood Gathering</h4>
-            <p>The Way Church • 6:30PM - 7:30PM</p>
-          </div>
-          <a href="events.html" class="event-link">Details →</a>
-        </div>
-        <div class="event-row">
-          <div class="event-date"><span class="date-month">SEP</span><span class="date-day">26</span></div>
-          <div class="event-info">
-            <h4>Neighborhood Picnic</h4>
-            <p>The Way Church • Time TBD</p>
-          </div>
-          <a href="events.html" class="event-link">Details →</a>
-        </div>
+      <div class="events-list" id="home-events-preview">
+        <!-- Events are rendered automatically from events-data.js -->
       </div>
       <div style="text-align:center;margin-top:2.5rem;">
         <a href="events.html" class="btn btn-outline">View All Events</a>
@@ -171,6 +148,10 @@
     </div>
   </footer>
 
-  <script src="nav.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/events-data.js"></script>
+  <script>
+    renderHomeEventsPreview('home-events-preview', 3);
+  </script>
 </body>
 </html>
