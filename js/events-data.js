@@ -33,21 +33,6 @@ const EVENTS = [
     locationIcon: "📍"
   },
   {
-    date: "2026-06-24",
-    month: "JUN",
-    day: "24",
-    tag: "meeting",
-    tagLabel: "Meeting",
-    title: "Monthly Board Meeting",
-    description: "Our regular monthly meeting is open to all residents. June's agenda includes the park renovation project update, discussion of the new traffic calming proposal on Elm Street, and the upcoming officer elections.",
-    time: "7:00 PM – 8:30 PM",
-    location: "Community Center, Room 2",
-    extra: "Open to Residents",
-    extraIcon: "🆓",
-    timeIcon: "🕖",
-    locationIcon: "📍"
-  },
-  {
     date: "2026-07-12",
     month: "JUL",
     day: "12",
@@ -78,7 +63,7 @@ const EVENTS = [
     locationIcon: "📍"
   },
   {
-    date: "2026-08-09",
+    date: "2026-09-20",
     month: "AUG",
     day: "9",
     tag: "social",
@@ -93,16 +78,16 @@ const EVENTS = [
     locationIcon: "📍"
   },
   {
-    date: "2026-10-05",
-    month: "OCT",
-    day: "5",
+    date: "2026-11-10",
+    month: "NOV",
+    day: "10",
     tag: "meeting",
     tagLabel: "Meeting",
-    title: "Annual General Meeting & Elections",
+    title: "Neighborhood Gathering & Elections",
     description: "The most important meeting of the year! Review the annual financial report, vote on bylaw amendments, and elect next year's board officers. All residents aged 18+ in good standing may vote. Light refreshments served.",
-    time: "6:00 PM – 8:30 PM",
-    location: "Community Center, Main Hall",
-    extra: "Voting Members Welcome",
+    time: "6:30PM - 7:30PM",
+    location: "The Way Church, 4326 Lloyd St.",
+    extra: "Open to All Residents",
     extraIcon: "🗳️",
     timeIcon: "🕕",
     locationIcon: "📍"
