@@ -18,15 +18,15 @@
 
 const EVENTS = [
   {
-    date: "2026-06-14",
-    month: "JUN",
+    date: "2026-07-14",
+    month: "JUL",
     day: "14",
-    tag: "social",
-    tagLabel: "Social",
-    title: "Summer Block Party",
+    tag: "meeting",
+    tagLabel: "Meeting",
+    title: "Neighborhood Gathering",
     description: "Our biggest event of the season! Join us for live music, food trucks, games for kids, and a chance to meet your neighbors. This year we're featuring a community raffle with prizes donated by local businesses.",
-    time: "4:00 PM – 8:00 PM",
-    location: "Rushton Park, Main Pavilion",
+    time: "6:30PM - 7:30PM",
+    location: "The Way Church, 4326 Lloyd St.",
     extra: "Free & Open to All",
     extraIcon: "🆓",
     timeIcon: "🕓",
